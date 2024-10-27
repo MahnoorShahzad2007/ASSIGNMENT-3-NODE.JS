@@ -1,17 +1,16 @@
+import React from 'react';
 import Header from './components/header';
 import Footer from './components/footer';
-import About from './components/about';
-import Mission from './components/mission';
+import LandingPage from './pages/landingpage';
 
-export default function Home() {
+const App: React.FC = () => {
   return (
-    <div className="bg-gray-100 text-gray-900 min-h-screen flex flex-col justify-between">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="flex-grow">
-        <About />
-        <Mission />
-      </main>
+      <LandingPage />
       <Footer />
     </div>
   );
-}
+};
+
+export default App;

@@ -1,9 +1,11 @@
-// components/Footer.js
-export default function Footer() {
-    return (
-      <footer className="bg-blue-600 text-white py-4 text-center">
-        <p>&copy; 2024 My Homepage. All rights reserved.</p>
-      </footer>
-    );
-  }
-  
+import React from 'react';
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="bg-gray-800 text-white p-4 text-center">
+      <p>&copy; 2024 My Website. All rights reserved.</p>
+    </footer>
+  );
+};
+
+export default Footer;
